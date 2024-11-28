@@ -54,4 +54,13 @@ describe('Carrinho de compras', () => {
         cy.get('[data-test="total-label"]').should('have.text', `Total: $${totalPrice}`)
       })
     })
+
+    it('Verificar finalização da compra', () => {
+      const productId = 'sauce-labs-backpack'
+      cy.addToCart(productId)
+      cy.get('[data-test="shopping-cart-link"]').click()
+      cy.fillCheckoutInformation('Test', 'User', '111111')
+      cy.get('[data-test="finish"]').click()
+      cy.get('[data-test="back-to-products"]').should('be.visible')
+    })
 })
