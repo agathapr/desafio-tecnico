@@ -1,6 +1,6 @@
 describe('Página lateral', () => {
     beforeEach('', () => {
-      cy.visit("https://www.saucedemo.com")
+      cy.visit("/")
       cy.login('standard_user', 'secret_sauce')
       cy.get('[data-test="title"]').should('be.visible')
     })

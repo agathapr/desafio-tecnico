@@ -1,6 +1,6 @@
 describe('Página de login', () => {
     beforeEach('', () => {
-      cy.visit("https://www.saucedemo.com");
+      cy.visit('/');
       cy.contains('Swag Labs').should('be.visible')
     })
 
