@@ -1,8 +1,7 @@
 const { defineConfig } = require("cypress");
-const Mochawesome = require("mochawesome");
 
 module.exports = defineConfig({
-  projectId: 'ab2fty',
+  projectId: "ghxoyp",
   chromeWebSecurity: false,
   e2e: {
     baseUrl: 'https://www.saucedemo.com',
