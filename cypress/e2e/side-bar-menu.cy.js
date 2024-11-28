@@ -2,7 +2,7 @@ describe('Página lateral', () => {
     beforeEach('', () => {
       cy.visit("https://www.saucedemo.com")
       cy.login('standard_user', 'secret_sauce')
-      cy.contains('Products').should('be.visible')
+      cy.get('[data-test="title"]').should('be.visible')
     })
   
     it('Fazer logout', () => {
