@@ -1,4 +1,4 @@
-## Projeto para o desafio técnico da empresa Voidr.co
+## Projeto para o desafio técnico
 Desenvolvido por Agatha Pereira Pires
 
 ### Instruções para utilizar o projeto:
